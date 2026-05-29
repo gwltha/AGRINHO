@@ -1,0 +1,248 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+:root{
+  --verde:#2e7d32;
+  --verdeClaro:#6bd44b;
+  --bege:#f5fff5;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:var(--bege);
+  color:#222;
+  overflow-x:hidden;
+}
+
+/* MENU */
+
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+
+  padding:20px 8%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:rgba(0,0,0,0.5);
+
+  z-index:1000;
+}
+
+.logo{
+  color:white;
+  font-size:24px;
+  font-weight:bold;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  position:relative;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  overflow:hidden;
+}
+
+.bg-video{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.overlay{
+  position:absolute;
+
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  color:white;
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:22px;
+  margin-bottom:30px;
+}
+
+.hero-content button{
+  padding:15px 35px;
+  border:none;
+  border-radius:40px;
+  background:var(--verdeClaro);
+  color:white;
+  cursor:pointer;
+}
+
+/* SEÇÕES */
+
+.section,
+.cards-section,
+.gallery-section,
+.quiz-section,
+.final{
+  padding:100px 10%;
+}
+
+.section h2,
+.cards-section h2,
+.gallery-section h2,
+.quiz-section h2,
+.final h2{
+  font-size:40px;
+  color:var(--verde);
+  margin-bottom:30px;
+}
+
+/* CARDS */
+
+.cards{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+
+  text-align:center;
+
+  transition:0.3s;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* INFO */
+
+.info-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:20px;
+}
+
+.info-box{
+  background:var(--verde);
+
+  color:white;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  text-align:center;
+}
+
+/* GALERIA */
+
+.gallery{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  height:250px;
+
+  object-fit:cover;
+
+  border-radius:20px;
+}
+
+/* QUIZ */
+
+.quiz-box{
+  background:white;
+
+  padding:30px;
+
+  border-radius:20px;
+}
+
+.quiz-box button{
+  width:100%;
+
+  padding:15px;
+
+  margin-top:15px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#eee;
+
+  cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+  nav{
+    display:none;
+  }
+
+  .hero-content h1{
+    font-size:38px;
+  }
+
+}
