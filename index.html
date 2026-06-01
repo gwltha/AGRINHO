@@ -1,275 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>🌱 Educação: a semente para um agro sustentável</h1>
+
+        <p>
+            Como o conhecimento pode transformar o campo e preservar o futuro
+        </p>
+
+        <div class="capa-info">
+            <p><strong>Aluno:</strong> Seu Nome</p>
+            <p><strong>Escola:</strong> Sua Escola</p>
+            <p><strong>Professor:</strong> Nome do Professor</p>
+            <p><strong>Ano:</strong> 2026</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#apresentacao">Apresentação</a>
+    <a href="#agro">Agro Sustentável</a>
+    <a href="#educacao">Educação</a>
+    <a href="#tecnologias">Tecnologias</a>
+    <a href="#quiz">Quiz</a>
+</nav>
+
+<section id="apresentacao">
+    <h2>📖 Apresentação</h2>
+
+    <p>
+        A agricultura é uma das atividades mais importantes para a sociedade,
+        pois fornece alimentos, matérias-primas e gera empregos.
+    </p>
+
+    <p>
+        Para garantir alimentos às futuras gerações sem prejudicar o meio ambiente,
+        é necessário investir em práticas sustentáveis.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80">
+</section>
+
+<section id="agro">
+    <h2>🌿 O Que é Agro Sustentável?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌱 Preservar o Solo</h3>
+            <p>Evitar erosões e manter a fertilidade.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Economizar Água</h3>
+            <p>Uso inteligente dos recursos naturais.</p>
+        </div>
+
+        <div class="card">
+            <h3>♻ Reduzir a Poluição</h3>
+            <p>Produção agrícola responsável.</p>
+        </div>
+
+        <div class="card">
+            <h3>🥗 Alimentos Saudáveis</h3>
+            <p>Mais qualidade para todos.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="educacao">
+    <h2>🎓 Importância da Educação no Agro</h2>
+
+    <ul>
+        <li>Produzir mais alimentos</li>
+        <li>Evitar desperdícios</li>
+        <li>Preservar rios e florestas</li>
+        <li>Melhorar a qualidade de vida</li>
+        <li>Usar novas tecnologias</li>
+    </ul>
+</section>
 
-      <title>Agrinho - Agro Sustentável</title>
+<section id="tecnologias">
+    <h2>🚀 Tecnologias que Ajudam o Agro</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📡 Agricultura de Precisão</h3>
+            <p>Uso de GPS, sensores e drones.</p>
+        </div>
 
-        <link rel="stylesheet" href="style.css">
+        <div class="card">
+            <h3>💧 Irrigação Inteligente</h3>
+            <p>Economiza água.</p>
+        </div>
 
-          <!-- Fonte -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <div class="card">
+            <h3>☀ Energia Renovável</h3>
+            <p>Energia solar e biogás.</p>
+        </div>
 
-                <!-- ICONS -->
-                  <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <div class="card">
+            <h3>📱 Aplicativos Agrícolas</h3>
+            <p>Controle da produção e clima.</p>
+        </div>
 
-                      <!-- AOS -->
-                        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    </div>
+</section>
 
-                          <!-- Chart -->
-                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<section id="quiz">
 
-                            </head>
-                            <body>
+    <h2>🧠 Quiz Interativo</h2>
 
-                              <!-- LOADER -->
-                                <div id="loader">
-                                    <div class="leaf"></div>
-                                        <h2>Carregando sustentabilidade...</h2>
-                                          </div>
+    <div class="quiz-box">
 
-                                            <!-- PARTÍCULAS -->
-                                              <div id="particles"></div>
+        <h3>1. O que significa agricultura sustentável?</h3>
 
-                                                <!-- BOTÃO FLUTUANTE -->
-                                                  <a href="#inicio" class="floating-btn">
-                                                      <i class="fa-solid fa-arrow-up"></i>
-                                                        </a>
+        <label>
+            <input type="radio" name="q1">
+            Produzir sem cuidar da natureza
+        </label>
 
-                                                          <!-- DARK MODE -->
-                                                            <button class="dark-mode-btn" id="darkBtn">
-                                                                🌙
-                                                                  </button>
+        <label>
+            <input type="radio" name="q1" value="certo">
+            Produzir respeitando a natureza
+        </label>
 
-                                                                    <!-- MÚSICA -->
-                                                                      <audio autoplay loop id="music">
-                                                                          <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8e1f3d7.mp3?filename=forest-lullaby-110624.mp3" type="audio/mp3">
-                                                                            </audio>
+        <label>
+            <input type="radio" name="q1">
+            Utilizar apenas máquinas antigas
+        </label>
 
-                                                                              <!-- MENU -->
-                                                                                <header>
+        <h3>2. Qual tecnologia economiza água?</h3>
 
-                                                                                    <div class="logo">
-                                                                                          🌱 AGRINHO
-                                                                                              </div>
+        <label>
+            <input type="radio" name="q2" value="certo">
+            Irrigação Inteligente
+        </label>
 
-                                                                                                  <nav>
-                                                                                                        <a href="#inicio">Início</a>
-                                                                                                              <a href="#sobre">Sobre</a>
-                                                                                                                    <a href="#tecnologia">Tecnologia</a>
-                                                                                                                          <a href="#grafico">Dados</a>
-                                                                                                                                <a href="#galeria">Galeria</a>
-                                                                                                                                      <a href="#quiz">Quiz</a>
-                                                                                                                                          </nav>
+        <label>
+            <input type="radio" name="q2">
+            Queimada
+        </label>
 
-                                                                                                                                            </header>
+        <label>
+            <input type="radio" name="q2">
+            Desmatamento
+        </label>
 
-                                                                                                                                              <!-- HERO COM VIDEO -->
-                                                                                                                                                <section class="hero" id="inicio">
+        <h3>3. O que a compostagem produz?</h3>
 
-                                                                                                                                                    <video autoplay muted loop playsinline class="bg-video">
-                                                                                                                                                          <source src="https://cdn.coverr.co/videos/coverr-farmer-working-on-field-1560677908170?download=1080p" type="video/mp4">
-                                                                                                                                                              </video>
+        <label>
+            <input type="radio" name="q3">
+            Lixo
+        </label>
 
-                                                                                                                                                                  <div class="overlay"></div>
+        <label>
+            <input type="radio" name="q3" value="certo">
+            Adubo Natural
+        </label>
 
-                                                                                                                                                                      <div class="hero-content" data-aos="fade-up">
+        <label>
+            <input type="radio" name="q3">
+            Poluição
+        </label>
 
-                                                                                                                                                                            <h1>
-                                                                                                                                                                                    Educação: a semente para um agro sustentável
-                                                                                                                                                                                          </h1>
+        <button onclick="corrigirQuiz()">
+            Ver Resultado
+        </button>
 
-                                                                                                                                                                                                <p>
-                                                                                                                                                                                                        Conhecimento, tecnologia e sustentabilidade transformando o futuro do campo.
-                                                                                                                                                                                                              </p>
+        <div id="resultado"></div>
 
-                                                                                                                                                                                                                    <button onclick="scrollToSection('sobre')">
-                                                                                                                                                                                                                            Explorar Projeto
-                                                                                                                                                                                                                                  </button>
+    </div>
 
-                                                                                                                                                                                                                                      </div>
+</section>
 
-                                                                                                                                                                                                                                        </section>
+<section>
+    <h2>✅ Conclusão</h2>
 
-                                                                                                                                                                                                                                          <!-- SOBRE -->
-                                                                                                                                                                                                                                            <section class="section parallax" id="sobre">
+    <p>
+        A educação é essencial para garantir um futuro sustentável no agro.
+        Através do conhecimento, é possível desenvolver novas tecnologias,
+        preservar o meio ambiente e produzir alimentos de forma consciente.
+    </p>
+</section>
 
-                                                                                                                                                                                                                                                <div data-aos="fade-right">
+<footer>
 
-                                                                                                                                                                                                                                                      <h2>🌾 O Agro Sustentável</h2>
+    <h2>🌱 Frase Final</h2>
 
-                                                                                                                                                                                                                                                            <p>
-                                                                                                                                                                                                                                                                    O agro sustentável busca produzir alimentos respeitando o meio ambiente,
-                                                                                                                                                                                                                                                                            preservando recursos naturais e garantindo qualidade de vida para as futuras gerações.
-                                                                                                                                                                                                                                                                                  </p>
+    <p>
+        "Educar é plantar sementes de um futuro mais sustentável para o agro e para o planeta."
+    </p>
 
-                                                                                                                                                                                                                                                                                      </div>
+</footer>
 
-                                                                                                                                                                                                                                                                                        </section>
+<script src="script.js"></script>
 
-                                                                                                                                                                                                                                                                                          <!-- CARDS 3D -->
-                                                                                                                                                                                                                                                                                            <section class="cards-section">
-
-                                                                                                                                                                                                                                                                                                <h2 data-aos="zoom-in">
-                                                                                                                                                                                                                                                                                                      🌱 Práticas Sustentáveis
-                                                                                                                                                                                                                                                                                                          </h2>
-
-                                                                                                                                                                                                                                                                                                              <div class="cards">
-
-                                                                                                                                                                                                                                                                                                                    <div class="card" data-aos="flip-left">
-                                                                                                                                                                                                                                                                                                                            <i class="fa-solid fa-seedling"></i>
-                                                                                                                                                                                                                                                                                                                                    <h3>Plantio Direto</h3>
-                                                                                                                                                                                                                                                                                                                                            <p>Protege o solo e evita erosões.</p>
-                                                                                                                                                                                                                                                                                                                                                  </div>
-
-                                                                                                                                                                                                                                                                                                                                                        <div class="card" data-aos="flip-left">
-                                                                                                                                                                                                                                                                                                                                                                <i class="fa-solid fa-droplet"></i>
-                                                                                                                                                                                                                                                                                                                                                                        <h3>Irrigação Inteligente</h3>
-                                                                                                                                                                                                                                                                                                                                                                                <p>Economiza água e reduz desperdícios.</p>
-                                                                                                                                                                                                                                                                                                                                                                                      </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                            <div class="card" data-aos="flip-left">
-                                                                                                                                                                                                                                                                                                                                                                                                    <i class="fa-solid fa-solar-panel"></i>
-                                                                                                                                                                                                                                                                                                                                                                                                            <h3>Energia Solar</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                    <p>Energia limpa para propriedades rurais.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                  <!-- CONTADOR -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <section class="counter-section">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="counter-box" data-aos="fade-up">
-                                                                                                                                                                                                                                                                                                                                                                                                                                              <h2 class="counter" data-target="90">0</h2>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>% de economia de água</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="counter-box" data-aos="fade-up">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <h2 class="counter" data-target="70">0</h2>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>% menos desperdício</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="counter-box" data-aos="fade-up">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <h2 class="counter" data-target="100">0</h2>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>% futuro sustentável</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- TECNOLOGIA -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <section class="section" id="tecnologia">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <h2 data-aos="fade-up">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                🚜 Tecnologia no Agro
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </h2>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="info-grid">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="info-box" data-aos="zoom-in">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      🛰️ Drones agrícolas
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <div class="info-box" data-aos="zoom-in">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          📱 Aplicativos agrícolas
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <div class="info-box" data-aos="zoom-in">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              💧 Sensores inteligentes
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <div class="info-box" data-aos="zoom-in">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ☀️ Energia renovável
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <!-- GRÁFICO -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <section class="section" id="grafico">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <h2 data-aos="fade-up">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            📊 Sustentabilidade no Agro
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </h2>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <canvas id="myChart"></canvas>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!-- GALERIA -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <section class="gallery-section" id="galeria">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <h2 data-aos="fade-up">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    📸 Galeria do Agro
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </h2>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="gallery">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200" alt="">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200" alt="">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200" alt="">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1200" alt="">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <!-- QUIZ -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <section class="quiz-section" id="quiz">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <h2 data-aos="fade-up">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        🧠 Quiz Interativo
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </h2>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="quiz-box">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              O que significa agricultura sustentável?
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </h3>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <button onclick="answer(this, true)">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Produzir respeitando a natureza
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </button>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <button onclick="answer(this, false)">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Desmatar florestas
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </button>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <button onclick="answer(this, false)">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Utilizar queimadas
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </button>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!-- FRASE FINAL -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <section class="final">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <h2>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    🌎 “Educar é plantar sementes de um futuro mais sustentável.”
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </h2>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <!-- FOOTER -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <footer>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Projeto Agrinho • Agro Sustentável 🌱
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </footer>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <!-- AOS -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <!-- JS -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <script src="script.js"></script>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </body>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </html>
+</body>
+</html>
